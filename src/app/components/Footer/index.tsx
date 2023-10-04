@@ -1,33 +1,31 @@
-import Image from 'next/image'
 import styles from './styles.module.css';
 const Footer = () => {
     return (
 <footer className={styles.footer}>
         <div className={styles.column}>
-                <ul>
-                    <li>Sitemap</li>
-                    <li>Home</li>
-                    <li>Post</li>
-                    <li>About</li>
-                </ul>
+        <ul>
+            <li>Sitemap</li>
+            <li>Home</li>
+            <li>Post</li>
+            <li>About</li>
+        </ul>
         </div>
         <div className={styles.column}>
-                <ul>
-                    <li>Conectate con nosotros</li>
-                    <li>Facebook</li>
-                    <li>Twitter</li>
-                    <li>TikTok</li>
-                </ul>
+        <ul>
+            <li>Conectate con nodotros</li>
+            <li>Facebook</li>
+            <li>Twiter</li>
+            <li>TiKtok</li>
+        </ul>
         </div>
         <div className={styles.column}>
-        <div className="relative flex place-items-center justify-center">
-        <Image
+        <div className="relative flex place-items-center before:absolute justify-center ">
+        <img
             className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
             src="/next.svg"
             alt="Next.js Logo"
             width={180}
             height={37}
-            priority
         />
         </div>
         </div>
@@ -40,21 +38,22 @@ const Footer = () => {
             rel="noopener noreferrer"
             >
             {' '}
-                <Image
+                <img
                 src="/vercel.svg"
                 alt="Vercel Logo"
                 className="dark:invert"
                 width={100}
                 height={24}
-                priority
             />
             </a>
         </div>
         </div>
         <div className={styles.column}>
-            <img src="./img/seminario.jpg" alt="" />
+        <img src="../../../../seminario.svg" alt="" />
         </div>
     </footer>
-    );
+    ) ;
 };
+
+
 export default Footer;
